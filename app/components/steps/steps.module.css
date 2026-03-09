@@ -1,0 +1,129 @@
+/* Steps Page Specific Styles */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    color: white;
+    width: 100%;
+}
+
+.mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.stepsContainer {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stepRow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dayLabel {
+    width: 30px;
+    font-weight: 600;
+    color: #ccc;
+    text-align: right;
+}
+
+.trackBar {
+    flex: 1;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    /* Optional: Keep squared or make rounded */
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    /* Example orange/peach gradient from image */
+    width: 0%;
+    transition: width 0.3s ease;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    /* Marker line */
+}
+
+/* Add tick marks */
+.ticks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.tick {
+    width: 1px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.scaleLabels {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute labels */
+    margin-left: 46px;
+    /* Offset for day label */
+    font-size: 0.7rem;
+    color: #888;
+    padding-right: 18px;
+    /* Adjustment */
+}
+
+/* Pagination / Month Navigation */
+.monthNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.navBtn {
+    background: transparent;
+    border: 1px solid var(--glass-border);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.navBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}

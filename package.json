@@ -3,13 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3005",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p 3005"
   },
   "dependencies": {
+    "firebase": "^12.7.0",
     "next": "16.0.8",
     "react": "19.2.1",
     "react-dom": "19.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
   }
 }
